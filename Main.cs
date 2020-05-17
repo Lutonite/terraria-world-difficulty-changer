@@ -71,7 +71,7 @@ public static class Program {
         
         BinaryReader reader = new BinaryReader(new FileStream(source, FileMode.Open));
         int version = reader.ReadInt32();
-        if (version <= 225) {
+        if (version < 225) {
             Console.Out.WriteLine("Error: Outdated terraria version. This tool is made for curVersion >= 225 (Terraria 1.4).");
             Console.ReadKey();
             return;
