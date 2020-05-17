@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerrariaWorldDifficultyChanger", "TerrariaWorldDifficultyChanger.csproj", "{8B20DC4D-4900-4003-AC4B-F83F300EB829}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B20DC4D-4900-4003-AC4B-F83F300EB829}.Debug|x86.ActiveCfg = Debug|x86
+		{8B20DC4D-4900-4003-AC4B-F83F300EB829}.Debug|x86.Build.0 = Debug|x86
+		{8B20DC4D-4900-4003-AC4B-F83F300EB829}.Release|x86.ActiveCfg = Release|x86
+		{8B20DC4D-4900-4003-AC4B-F83F300EB829}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FA04896-B7C1-410E-B94A-5DA2A7254133}
+	EndGlobalSection
+EndGlobal
