@@ -71,8 +71,8 @@ public static class Program {
         
         BinaryReader reader = new BinaryReader(new FileStream(source, FileMode.Open));
         int version = reader.ReadInt32();
-        if (version != 225) {
-            Console.Out.WriteLine("Error: Outdated terraria version. This tool is made for curVersion 225 (Terraria 1.4.0.1).");
+        if (version <= 225) {
+            Console.Out.WriteLine("Error: Outdated terraria version. This tool is made for curVersion >= 225 (Terraria 1.4).");
             Console.ReadKey();
             return;
         }
@@ -167,9 +167,9 @@ public static class Program {
 
         BinaryWriter writer = new BinaryWriter(new FileStream(dest, FileMode.Open));
         writer.BaseStream.Position = gameModeOffset;
-        writer.Write(2);
+        writer.Write(difficulty);
         writer.BaseStream.Position = hardModeOffset;
-        writer.Write(true);
+        writer.Write(hardMode);
         writer.Dispose();
         
         Console.Out.WriteLine("Save game updated!");
